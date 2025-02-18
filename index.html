@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Personal portfolio website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/b6f27b6017.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I'm <span> Kevin </span> <br />from Malaysia</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Bursting with imagery, motion, interaction and distraction though
+              it is, today’s World Wide Web is still primarily a conduit for
+              textual information. In HTML5, the focus on writing and authorship
+              is more pronounced than ever. It’s evident in the very way that
+              new elements such as article and aside are named. HTML5 asks us to
+              treat the HTML document more as… well, a document.
+            </p>
+            <!-- Alt+Shift+Down Arrow to duplicate line below current cursor  -->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App intefaces</li>
+                <li>
+                  <span>Web Development</span><br />
+                  Web/App Development
+                </li>
+                <li>
+                  <span>App development</span><br />
+                  Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Experience</span><br />Experience</li>
+                <li><span>Experience</span><br />Experience</li>
+                <li><span>Experience</span><br />Experience</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Education</span><br />Education</li>
+                <li><span>Education</span><br />Education</li>
+                <li><span>Education</span><br />Education</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------services---------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Whether it’s simple sentences for those just learning the English
+              language or phrasing for an academic paper, this easy-to-use
+              sentence generator will help you choose your words with
+              confidence.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Whether it’s simple sentences for those just learning the English
+              language or phrasing for an academic paper, this easy-to-use
+              sentence generator will help you choose your words with
+              confidence.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Whether it’s simple sentences for those just learning the English
+              language or phrasing for an academic paper, this easy-to-use
+              sentence generator will help you choose your words with
+              confidence.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------portfolio------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="work-1" />
+            <div class="layer">
+              <h3>Work 1</h3>
+              <p>The job requires that you work some nights and weekends.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-2.png" alt="work-2" />
+            <div class="layer">
+              <h3>Work 2</h3>
+              <p>The job requires that you work some nights and weekends.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-3.png" alt="work-3" />
+            <div class="layer">
+              <h3>Work 3</h3>
+              <p>The job requires that you work some nights and weekends.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ---------------contact------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+            <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/test.pdf" download class="btn btn2">Download CV</a>
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ Kevin. Made with <i class="fa-regular fa-heart"></i> by
+          XXXXXXXXXX
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbyzWw5uh4CxQTVmkZJMvyEQX6AG-qK4RzckoQIgGYYaAyvqxl6vbZSGX7WDX3r16KEI/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById('msg');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = 'Message sent successfully';
+            setTimeout(function () {
+              msg.innerHTML = '';
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
+</html>
